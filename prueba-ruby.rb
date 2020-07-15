@@ -30,3 +30,18 @@ Se revisará la estructura del documento generado.
     un nuevo hash con el nombre de la camara y la cantidad de fotos.
 
 =end
+
+def request(url1, key1)
+    require "uri"
+    require "net/http"
+    require "JSON"
+
+url = URI("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=10&api_key=IUjbbtYHhBzj7GgoRv6WrLD1VA4ras04UZ6BxcK7")
+
+https = Net::HTTP.new(url.host, url.port);
+https.use_ssl = true
+
+request = Net::HTTP::Get.new(url)
+
+response = https.request(request)
+puts response.read_body
