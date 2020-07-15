@@ -48,6 +48,11 @@ def request(url1, key1) #metodo
 
 end
 
-#llamando al método
+#llamado al método
 body = request("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=10&api_key=IUjbbtYHhBzj7GgoRv6WrLD1VA4ras04UZ6BxcK7")
 
+
+def build_web_page (website) #metodo build_we_page que recibe el hash de respuesta
+    imgs=[]
+    10.times do |x|
+        imgs << website[""]
