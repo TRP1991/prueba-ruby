@@ -37,12 +37,28 @@ body {
     height: 10px;
     border-radius: 50%;
     background-color: grey;
-  }
+}
 
-form {
-    margin: 0 auto;
-    width: 310px;
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
+.text-2 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.correo {
+    font-size: 1.3125rem;
+    color: #000000;
+}
+
+.color-enviar {
+    color: #212529;
+}
+
+.logo-footer {
+    font-family: 'Amatic SC';
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.footer-t {
+    background-color: #979697;
 }
