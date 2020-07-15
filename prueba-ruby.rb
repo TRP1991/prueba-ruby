@@ -55,4 +55,11 @@ body = request("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?
 def build_web_page (website) #metodo build_we_page que recibe el hash de respuesta
     imgs=[]
     10.times do |x|
-        imgs << website[""]
+        imgs << website["photos"][x]["img_src"]
+    end
+
+    File.open("index.html", "w") do |file|
+        file.write(
+            
+
+        )
