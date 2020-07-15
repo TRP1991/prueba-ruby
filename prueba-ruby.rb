@@ -38,12 +38,16 @@ def request(url1, key1) #metodo
 
     url = URI ("#{url1} #{key1}") #concatenación
 
-url = URI("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=10&api_key=IUjbbtYHhBzj7GgoRv6WrLD1VA4ras04UZ6BxcK7")
+    https = Net::HTTP.new(url.host, url.port);
+    https.use_ssl = true
 
-https = Net::HTTP.new(url.host, url.port);
-https.use_ssl = true
+    request = Net::HTTP::Get.new(url)
 
-request = Net::HTTP::Get.new(url)
+    response = https.request(request)
+    body=JSON.parse response.read_body
 
-response = https.request(request)
-body=JSON.parse response.read_body
+end
+
+#llamando al método
+body = request("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=10&api_key=IUjbbtYHhBzj7GgoRv6WrLD1VA4ras04UZ6BxcK7")
+
