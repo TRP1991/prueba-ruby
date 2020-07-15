@@ -31,10 +31,12 @@ Se revisará la estructura del documento generado.
 
 =end
 
-def request(url1, key1)
+def request(url1, key1) #metodo
     require "uri"
     require "net/http"
     require "JSON"
+
+    url = URI ("#{url1} #{key1}") #concatenación
 
 url = URI("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=10&api_key=IUjbbtYHhBzj7GgoRv6WrLD1VA4ras04UZ6BxcK7")
 
@@ -44,4 +46,4 @@ https.use_ssl = true
 request = Net::HTTP::Get.new(url)
 
 response = https.request(request)
-puts response.read_body
+body=JSON.parse response.read_body
