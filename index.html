@@ -25,7 +25,6 @@ integrity="sha384UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s
 
 
 <body>
-
 <!--Open Navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
     <div class="container">
@@ -52,14 +51,17 @@ integrity="sha384UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s
   </nav>
 <!--Close Navbar-->
 
+
 <!--Open Description Section-->
 <section id="welcome">
   <div class="d-none d-md-block">
     <h1 class="title font-weight-bold pt-5 my-5 text-center text-light text-body display-4">NASA</h1>
     <hr class="mt-4">
-    <h4 class="subtitle text-dark text-center font-weight-bold">Mars Curiosity Image Gallery</h4>
+    <h4 class="subtitle text-dark text-center font-weight-bold">MARS CURIOSITY IMAGE GALLERY</h4>
     <h4 class="text-dark text-center font-weight-bold ">Prueba - Introducción a la programación
       con Ruby</h4>
+<!--Close Description Section-->
+
 
 <!--Open Section Carousel Section-->
 <section id="images">
@@ -130,7 +132,7 @@ integrity="sha384UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s
 <!--Open Requierements Section-->
 <section class="text-justify description">
   <div class="container my-4 py-4 d-none d-md-block">
-    <h3 class="requirements font-weight-bold text-center text-light text-body display-4">Requerimientos</h3>
+    <h3 class="requirements font-weight-bold text-center text-light text-body display-4">REQUERIMIENTOS</h3>
       <div class="row">
 
           <div class="col-6 my-3 py-3">
@@ -162,35 +164,30 @@ integrity="sha384UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s
       </div>
   </div>
 </section>
+<hr class="mt-4">
 <!--Close Requirements Section-->
 
 
 <!--Open Gallery Section-->
-
-<button type="button" class="btn btn-secondary btn-lg btn-block">Revisa nuestra galería completa</button>
-<hr class="my-3 py-3">
+<h2 class="gallery font-weight-bold text-center text-light text-body display-4">GALERÍA</h2>
+<button type="button" class="my-4 btn btn-secondary btn-lg btn-block">Revisa nuestra galería completa</button>
+<hr class="my-4">
 <!--Close Gallery Section-->
 
+
 <!--Contact Section-->
-<form action="/my-handling-form-page" method="post">
-  <ul>
-   <li>
-     <label for="name">Nombre:</label>
-     <input type="text" id="name" name="user_name">
-   </li>
-   <li>
-     <label for="mail">Correo electrónico:</label>
-     <input type="email" id="mail" name="user_mail">
-   </li>
-   <li>
-     <label for="msg">Mensaje:</label>
-     <textarea id="msg" name="user_message"></textarea>
-   </li>
-  </ul>
-  <li class="button">
-    <button type="submit">Enviar</button>
-  </li>
+<h2 class="contact font-weight-bold text-center text-light text-body display-4">CONTACTO</h2>
+<hr class="hr1 mt-4">
+<form action="" method="POST" enctype="multipart/form-data">
+  <input name="action" value="submit" type="hidden">¿Cuál es tu nombre?<br>
+  <input name="name" size="30" type="text"><br>¿Cuál es tu correo?<br>
+  <input name="email" size="30" type="text"><br>Escribe tu mensaje<br>
+  <textarea name="message" rows="4" cols="30"></textarea>
+  </textarea><br>
+  <input value="Enviar" type="submit">  
 </form>
+<hr class="my-3 py-3">
+<!--Close Contact Section-->
 
 
 
