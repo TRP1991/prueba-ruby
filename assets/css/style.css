@@ -1,0 +1,13 @@
+body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.navbar-brand img {
+    max-width: 160px;
+    height: auto;
+}
+
+.menu {
+    font-weight: 600;
+    font-size: 1.1825rem;
+}
