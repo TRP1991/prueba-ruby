@@ -53,7 +53,6 @@ integrity="sha384UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s
 <!--Close Navbar-->
 
 <!--Open Description Section-->
-
 <section id="welcome">
   <div class="d-none d-md-block">
     <h1 class="title font-weight-bold pt-5 my-5 text-center text-light text-body display-4">NASA</h1>
@@ -61,54 +60,10 @@ integrity="sha384UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s
     <h4 class="subtitle text-dark text-center font-weight-bold">Mars Curiosity Image Gallery</h4>
     <h4 class="text-dark text-center font-weight-bold ">Prueba - Introducción a la programación
       con Ruby</h4>
-    <hr class="mt-4">
-  </div>
-</section>
-
-<section class="text-justify my-2 pt-4 description">
-  <div class="container d-none d-md-block">
-    <h3 class="requirements font-weight-bold my-2 pt-4 text-center text-light text-body display-4">Requerimientos</h3>
-      <div class="row">
-
-          <div class="col-6">
-              <p>En este desafío nos conectaremos a la API de la NASA para descargar fotos de los Rovers y filtar
-                resultados acorde a lo pedido.</p>
-
-              <p class="font-weight-bold">¿Qué tenemos que saber para enfrentarnos a esta prueba?</p>
-                <ul>
-                  <li>Consumo de una API Rest con autenticación sencilla</li>
-                  <li>Crear métodos que reciban parámetros</li>
-                  <li>Iterar resultados dentro de un hash y un arreglo</li>
-                  <li>Filtrar resultados dentro de un hash y un arreglo</li>
-                  <li>Guardar los resultados dentro de un archivo</li>
-               </u>   
-          </div>
-
-          <div class="col-6">
-            <p class="font-weight-bold">Se pide:</p>
-            <ul>
-              <li>Crear el método request que reciba una url y el api_key y devuelva el hash con los resultados
-                Concatenar la API Key en la url</li>
-              <li>Crear un método llamado buid_web_page que reciba el hash de respuesta con todos los datos
-                y construya una página web.</li>
-              <li>Se revisará la estructura del documento generado</li>
-              <li>Pregunta bonus: Crear un método photos_count que reciba el hash de respuesta y devuelva
-                un nuevo hash con el nombre de la camara y la cantidad de fotos.</li>
-           </u>   
-        </div>
-
-      </div>
-  </div>
-</section>
-<!--Close Description Section-->
-
 
 <!--Open Section Carousel Section-->
-
 <section id="images">
-  <h3></h3>
-  <hr class="hr1 mt-3">
-  <div class="container my-5 py-3 carousel">
+  <div class="container my-3 py-3 carousel">
       <!--Open Row-->
       <div class="row">
 
@@ -164,8 +119,53 @@ integrity="sha384UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s
       </div>
    <!--Close Row-->
   </div>
+<hr class="hr1 mt-4">
+
 </section>
 <!--Close Carousel Section-->
+  </div>
+</section>
+<!--Close Description Section-->
+
+
+<!--Open Requierements Section-->
+<section class="text-justify description">
+  <div class="container my-4 py-4 d-none d-md-block">
+    <h3 class="requirements font-weight-bold text-center text-light text-body display-4">Requerimientos</h3>
+      <div class="row">
+
+          <div class="col-6 my-3 py-3">
+              <p>En este desafío nos conectaremos a la API de la NASA para descargar fotos de los Rovers y filtar
+                resultados acorde a lo pedido.</p>
+
+              <p class="font-weight-bold">¿Qué tenemos que saber para enfrentarnos a esta prueba?</p>
+                <ul>
+                  <li>Consumo de una API Rest con autenticación sencilla</li>
+                  <li>Crear métodos que reciban parámetros</li>
+                  <li>Iterar resultados dentro de un hash y un arreglo</li>
+                  <li>Filtrar resultados dentro de un hash y un arreglo</li>
+                  <li>Guardar los resultados dentro de un archivo</li>
+               </u>   
+          </div>
+
+          <div class="col-6 my-3 py-3">
+            <p class="font-weight-bold">Se pide:</p>
+            <ul>
+              <li>Crear el método request que reciba una url y el api_key y devuelva el hash con los resultados
+                Concatenar la API Key en la url.</li>
+              <li>Crear un método llamado buid_web_page que reciba el hash de respuesta con todos los datos
+                y construya una página web.</li>
+              <li>Se revisará la estructura del documento generado</li>
+              <li>Pregunta bonus: Crear un método photos_count que reciba el hash de respuesta y devuelva
+                un nuevo hash con el nombre de la camara y la cantidad de fotos.</li>
+           </u>   
+        </div>
+
+      </div>
+  </div>
+</section>
+<!--Close Requirements Section-->
+
 
 
 
