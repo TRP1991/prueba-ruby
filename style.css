@@ -1,0 +1,64 @@
+body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.navbar-brand img {
+    max-width: 160px;
+    height: auto;
+}
+
+.menu {
+    font-weight: 600;
+    font-size: 1.1825rem;
+}
+
+.title {
+    font-family: 'Ubuntu Condensed';
+    font-size: 100px;
+}
+
+.subtitle {
+    padding-right: 10%;
+    padding-left: 10%;
+    font-family: 'Amatic SC';
+    font-size: 60px;
+}
+
+.carousel-item img {
+    width: 200px;
+    height: 180px;
+}
+.carousel-indicators {
+    top: 200px;
+  }
+  
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.text-2 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.correo {
+    font-size: 1.3125rem;
+    color: #000000;
+}
+
+.color-enviar {
+    color: #212529;
+}
+
+.logo-footer {
+    font-family: 'Amatic SC';
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.footer-t {
+    background-color: #979697;
+}
